@@ -44,3 +44,58 @@ if (persona['nombre']=='Raul' and persona['nacionalidad']=='Boliviana'):
 else:
     print('No, la persona es ',persona['nombre'],'y su nacionalidad es ',persona['nacionalidad'],)
 
+# for
+
+meses = ['Enero','Febrero','Marzo','Abril']
+
+for mes in meses:
+    if mes =='Enero':
+        print('Vamos a la playa')
+    print(mes)
+
+for numero in range(5,10,12):
+    print(numero)
+
+print(int(10.6))
+for numero in range(int(len(meses)/2),len(meses)):
+    print(numero)
+
+
+# Ejercicio
+# Cuantas personas tienen más de 20 años
+# qué personas tienen menos de 20 personas: Nicolas y Guillermo
+
+personas = [
+    {
+    'nombre': 'Adriana',
+    'edad': 25
+    },
+    {
+    'nombre': 'Nicolas',
+    'edad': 15
+    },
+    {
+    'nombre': 'Maria',
+    'edad': 23
+    },
+    {
+    'nombre': 'Guillermo',
+    'edad': 10
+    }
+]
+# 1. Cuantas personas tienen mas de 20 años  > 2
+# 2. Que personas son las que tienen menos de 20 años > Las personas son Nicolas, Guillermo
+# HINT: crear una lista donde se almacenen los nombres de las personas que tienen menos de 20, un contador para contar a las personas de mas de 20
+
+
+contador = 0
+listaMenores = []
+
+for persona in personas:
+    if persona['edad']>=20:
+        contador += 1
+    else:
+        listaMenores.append(persona['nombre'])
+
+print('Hay ',contador,'mayores de 20 años')
+print(listaMenores,' son las personas menores de 20 años')
