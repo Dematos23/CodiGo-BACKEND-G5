@@ -1,4 +1,2 @@
-entorno-flask/*
-entorno-flask/
-entorno-flask
-entorno_django/
+entorno
+.env
