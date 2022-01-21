@@ -1,0 +1,29 @@
+{
+  "name": "minimarket",
+  "version": "1.0.0",
+  "description": "proyecto de minimarkets",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dematos23/CodiGo-BACKEND-G5.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "middlewares"
+  ],
+  "author": "Diego Matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dematos23/CodiGo-BACKEND-G5/issues"
+  },
+  "homepage": "https://github.com/Dematos23/CodiGo-BACKEND-G5#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
