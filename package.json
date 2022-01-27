@@ -1,22 +1,22 @@
 {
-  "name": "minimarket",
+  "name": "cafeteria",
   "version": "1.0.0",
-  "description": "proyecto de minimarkets",
+  "description": "proyecto para una cafeteria",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "start:dev": "nodemon index.js"
+    "start": "node src/index.js",
+    "start:dev": "dotenv -e .env nodemon src/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dematos23/CodiGo-BACKEND-G5.git"
   },
   "keywords": [
-    "node.js",
-    "express",
-    "middlewares"
+    "pexpress",
+    "nodejs",
+    "prisma"
   ],
   "author": "Diego Matos",
   "license": "ISC",
@@ -25,10 +25,12 @@
   },
   "homepage": "https://github.com/Dematos23/CodiGo-BACKEND-G5#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.2"
+    "@prisma/client": "^3.8.1",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "prisma": "^3.8.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "dotenv-cli": "^4.1.1"
   }
 }
