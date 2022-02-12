@@ -1,0 +1,38 @@
+{
+  "name": "bodega",
+  "version": "1.0.0",
+  "description": "backend del chifa kalu wantan",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "dotenv -e .env -- nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dematos23/CodiGo-BACKEND-G5.git"
+  },
+  "keywords": [
+    "express",
+    "mongo",
+    "nosquel",
+    "multer"
+  ],
+  "author": "diego matos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dematos23/CodiGo-BACKEND-G5/issues"
+  },
+  "homepage": "https://github.com/Dematos23/CodiGo-BACKEND-G5#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "multer": "^1.4.4",
+    "nanoid": "^3.2.0",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^5.0.0"
+  }
+}
