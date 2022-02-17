@@ -45,6 +45,8 @@ model Usuario {
   correo      String      @unique
   password    String
   tipoUsuario TipoUsuario @map("tipo_usuario")
+
+  @@map(name: "usuarios")
 }
 
 enum TipoUsuario {
