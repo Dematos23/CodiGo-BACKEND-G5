@@ -35,7 +35,13 @@ export class PagoService {
           },
           email: clienteEncontrado.correo,
         },
-        payment_methods: metodosDePago,
+        payment_methods: {
+          default_installments: 2,
+          installments: 3,
+          excluded_payment_methods: [{ id: "diners" }, { id: "debvisa" }],
+          excluded_payment_types: [{ id: "atm" }],
+        },
+
         items: itemsMP,
 
         auto_return: "approved",
@@ -45,9 +51,8 @@ export class PagoService {
           pending: "http://localhost:3000/pendiente",
           failure: "http://localhost:3000/fallo",
         },
+        notification_url: `${process.env.DOMINIO}/notificaciones`,
       });
-      console.log(metodosRespuesta.body);
-      console.log(preferencia.body);
       return {
         resultado: preferencia,
       };
